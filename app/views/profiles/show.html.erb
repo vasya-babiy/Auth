@@ -1,5 +1,6 @@
+<table>
 <p>
-	<strong>First name:</strong>
+	<strong font-size: 20pt;>First name:</strong>
 	<%= @profile.first_name %>
 </p>
 <p>
@@ -10,4 +11,5 @@
 	<strong>Age:</strong>
 	<%= @profile.age %>
 </p>
-<%= link_to "Edit profile", edit_user_profile_path(@user) %>
+</table>
+<%= link_to "Edit profile", edit_user_profile_path(@user), class: "btn btn-default"%>
