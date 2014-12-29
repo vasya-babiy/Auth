@@ -12,8 +12,9 @@ class ProfilesController < ApplicationController
 	def update
 		@user = User.find(params[:user_id])
 		@profile = @user.profile
+		
 		if @profile.update_attributes(params[:profile])
-			redirect_to user_profile_url(@user)
+			redirect_to user_profile_path(@user)
 		else
 			render 'edit'
 		end

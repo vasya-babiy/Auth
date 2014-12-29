@@ -30,11 +30,18 @@ class UsersController < ApplicationController
 
 	def update
 		@user = User.find(params[:id])
-		if @user.update_attributes(params[:user])
-			flash[:succsses] = "Edit user"
-			redirect_to user_path
-		else
-			render "edit"
+		respond_to do |format|
+
+			if @user.update_attributes(params[:user])
+				format.html { redirect_to edit_user_path, notice: "Email changed" }
+				format.js {}
+			else
+				format.html { render action: "edit" }
+		# 	flash[:succsses] = "Edit user"
+		# 	redirect_to edit_user_path
+		# else
+		# 	render "edit"
+			end
 		end
 	end
 end

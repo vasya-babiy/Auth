@@ -3,7 +3,7 @@
 <head>
   <title>Auth</title>
   <link href="/assets/application.css" media="all" rel="stylesheet" type="text/css">
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery", "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,7 +11,7 @@
 
 <div id="user_nav">
   <% if current_user %>
-    Logged in as <%= current_user.email %>.
+    <div id="lol">Logged in as <%= current_user.email %>.</div>
     <%= link_to "Log out", log_out_path %>
     <%= link_to "Change email", edit_user_path(current_user) %>
   <% else %>
