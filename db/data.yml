@@ -1,0 +1,98 @@
+
+---
+profiles:
+  columns:
+  - id
+  - first_name
+  - last_name
+  - age
+  - birth_date
+  - created_at
+  - updated_at
+  - user_id
+  records: 
+  - - 1
+    - 
+    - 
+    - 
+    - 
+    - 2014-10-10 06:31:59.000000000 Z
+    - 2014-10-10 06:31:59.000000000 Z
+    - 1
+  - - 2
+    - 
+    - 
+    - 
+    - 
+    - 2014-10-10 07:28:45.000000000 Z
+    - 2014-10-10 07:28:45.000000000 Z
+    - 2
+  - - 3
+    - 
+    - 
+    - 
+    - 
+    - 2014-10-30 14:58:26.000000000 Z
+    - 2014-10-30 14:58:26.000000000 Z
+    - 5
+  - - 4
+    - 
+    - 
+    - 
+    - 
+    - 2014-11-11 08:58:57.000000000 Z
+    - 2014-11-11 08:58:57.000000000 Z
+    - 6
+
+---
+users:
+  columns:
+  - id
+  - email
+  - password_hash
+  - password_salt
+  - created_at
+  - updated_at
+  records: 
+  - - 1
+    - profile@gmail.com
+    - $2a$10$NjTlUNA4iiCw7HPPCMnwBuswnKBbxHzMDk6IstZEYYldVSw6iyTR2
+    - $2a$10$NjTlUNA4iiCw7HPPCMnwBu
+    - 2014-10-10 06:31:59.000000000 Z
+    - 2014-10-13 13:06:32.000000000 Z
+  - - 2
+    - Vlad@gmail.com
+    - $2a$10$WmexkIGDg2C2PJmCcXy6puQ3EnFQxlHDi1ZaU1gLiqOaeqHF5Vy12
+    - $2a$10$WmexkIGDg2C2PJmCcXy6pu
+    - 2014-10-10 07:28:45.000000000 Z
+    - 2014-10-10 07:28:45.000000000 Z
+  - - 5
+    - smile@gmail.com
+    - $2a$10$I0LByt56uSNTnRn.Iai9a.loo4pivpeENZlkOaJlYZrm91fYKImNy
+    - $2a$10$I0LByt56uSNTnRn.Iai9a.
+    - 2014-10-30 14:58:25.000000000 Z
+    - 2014-10-30 14:58:25.000000000 Z
+  - - 6
+    - mas@gmail.com
+    - $2a$10$sNSnWFhxh5Wjwf/b1A3EMOkeO8KJxGOz5Bp4okBklVneoRsrpmNiq
+    - $2a$10$sNSnWFhxh5Wjwf/b1A3EMO
+    - 2014-11-11 08:58:57.000000000 Z
+    - 2014-11-11 08:58:57.000000000 Z
+  - - 7
+    - oleg@gmail.com
+    - $2a$10$6rVuYWMYnLIilduDeQ5duugcK4y19fWesw8PGe9pNyHdd3pQ5bMDa
+    - $2a$10$6rVuYWMYnLIilduDeQ5duu
+    - 2014-11-19 12:00:00.000000000 Z
+    - 2014-11-19 12:00:00.000000000 Z
+  - - 8
+    - adam@gmail.com
+    - $2a$10$D.xsKjc2ef9eR.vX238qq.Cvb3wf1LNGZR8YBOJc0PEJxGMahXwYG
+    - $2a$10$D.xsKjc2ef9eR.vX238qq.
+    - 2014-11-19 15:21:31.000000000 Z
+    - 2014-11-19 15:21:31.000000000 Z
+  - - 9
+    - vasyababiy@gmail.com
+    - $2a$10$yECplSIjlXOFTsLQjCz0y.W3puQUsQ8QMeY7ihoNVpllNXUSnwweq
+    - $2a$10$yECplSIjlXOFTsLQjCz0y.
+    - 2014-11-19 20:14:18.000000000 Z
+    - 2014-11-19 20:14:18.000000000 Z
