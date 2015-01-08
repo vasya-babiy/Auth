@@ -1,0 +1,17 @@
+<div id="show_p">
+	<p>
+		<strong>First name:</strong>
+		<%= @profile.first_name %>
+	</p>
+	<p>
+		<strong>Last name:</strong>
+		<%= @profile.last_name %>
+	</p>
+	<p>
+		<strong>Age:</strong>
+		<%= @profile.age %>
+	</p>
+	<p>
+		<%= image_tag @profile.image_url.to_s %>
+	</p>
+</div>

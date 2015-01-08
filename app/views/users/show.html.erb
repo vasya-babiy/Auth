@@ -1,6 +1,10 @@
-<h2> Your email was changed! </h2>
-<div class='your_e'>
-	<%= current_user.email %>
+<h2> User show </h2>
+<div id='your_e'>
+	Your email was changed to <%= current_user.email %>
 </div>
+<%= render 'modal' %>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Change email
+</button> <br />
 <%= link_to "Home page", user_profile_path(@user) %><br />
 <%= link_to "Edit profile", edit_user_profile_path(@user) %>

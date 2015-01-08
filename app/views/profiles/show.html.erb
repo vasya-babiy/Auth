@@ -1,6 +1,5 @@
-<table>
 <p>
-	<strong font-size: 20pt;>First name:</strong>
+	<strong>First name:</strong>
 	<%= @profile.first_name %>
 </p>
 <p>
@@ -14,5 +13,5 @@
 <p>
 	<%= image_tag @profile.image_url.to_s %>
 </p>
-</table>
+<%= render 'modal' %>
 <%= link_to "Edit profile", edit_user_profile_path(@user), class: "btn btn-default"%>
