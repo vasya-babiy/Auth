@@ -1,4 +1,2 @@
-//$(".editable_table tbody tr#user_#{@user.id}").replaceWith("#{ j(render partial: 'tr', locals: { user: @user }) }");
-//$("#show_p").replaceWith("#{ j(render partial: 'showprofile', locals: { profile: @profile }) }");
-//$("#show_p").html("<%= render 'showprofile' %>");
+$("#show_p").replaceWith("<%= j render 'showprofile', profile: @profile %>");
 $("#myModal").modal('hide');

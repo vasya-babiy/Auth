@@ -11,7 +11,7 @@
 			</ul>
 		</div>
 	<% end %>
-<%= form_for @profile, url: { action: "update" }, html: { multipart: :true } do |f| %>
+<%= form_for @profile, remote: true, url: { action: "update" }, html: { multipart: :true } do |f| %>
 
 	<p>
 		<%= f.label :first_name %>
