@@ -1,0 +1,17 @@
+<%= form_for @admin_profile, url: edit_admin_admin_admin_profile_path(@admin_profile), url: { action: "update" } do |f| %>
+  <p>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </p>
+  <p>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+  </p>
+  <p>
+      <%= f.label :age %>
+      <%= f.text_field :age %>
+  </p>
+  <%= f.submit 'Save', {class: "btn btn-primary"} %>
+<% end %>
+<%= link_to 'Show profile', admin_admin_admin_profile_path(@admin) %> <br />
+<%= link_to 'Home page', admin_admin_path(current_admin) %>

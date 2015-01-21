@@ -15,8 +15,8 @@ class Admin::AdminsController < ApplicationController
 	def create
   	@admin = Admin.new(params[:admin])
   	if @admin.save
-  		# @admin.create_profile
-    	redirect_to admin_log_in_path, :notice => "Signed up!"
+			@admin.create_profile
+			redirect_to admin_log_in_path, :notice => "Signed up!"
   	else
     	render 'new'
   	end
@@ -30,7 +30,7 @@ class Admin::AdminsController < ApplicationController
 	def update
 		@admin = Admin.find(params[:id])
 		if @admin.update_attributes(params[:admin])
-			redirect_to edit_admin_admin_path(@admin)
+			redirect_to admin_admin_path(@admin)
 		else
 			render 'edit'
 		end

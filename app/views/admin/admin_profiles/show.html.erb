@@ -1,0 +1,14 @@
+<p>
+	<strong>First name:</strong>
+	<%= @admin_profile.first_name %>
+</p>
+<p>
+	<strong>Last name:</strong>
+	<%= @admin_profile.last_name %>
+</p>
+<p>
+	<strong>Age:</strong>
+	<%= @admin_profile.age %>
+</p>
+<%= link_to 'Edit profile', edit_admin_admin_admin_profile_path(@admin) %> <br />
+<%= link_to 'Home page', admin_admin_path(current_admin) %>

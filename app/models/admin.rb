@@ -2,6 +2,7 @@ class Admin < ActiveRecord::Base
 	include Authorization
 	
   attr_accessible :email, :password, :password_confirmation
+  has_one :profile, as: :profileable
 
   attr_accessor :password
   before_save :encrypt_password
