@@ -1,0 +1,7 @@
+<h2> Admin show </h2>
+	<div id='your_e'>
+		<strong> Email: </strong> <%= current_admin.email %>
+	</div>
+
+<%= link_to "Edit admin", edit_admin_admin_path(@admin) %> <br />
+<%= link_to "Show users", admin_admins_path %>
