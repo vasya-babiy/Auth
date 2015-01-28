@@ -1,6 +1,7 @@
 Auth::Application.routes.draw do
 
 namespace :admin do
+	resources :users
 	resources :admins do
 		resource :admin_profile, except: [ :new, :create ]
 	end

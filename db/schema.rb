@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150121100431) do
+ActiveRecord::Schema.define(:version => 20150123135105) do
 
   create_table "admins", :force => true do |t|
     t.string   "email"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20150121100431) do
     t.string   "password_salt"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "role"
+    t.integer  "role_id"
   end
 
   create_table "profiles", :force => true do |t|
@@ -35,12 +37,21 @@ ActiveRecord::Schema.define(:version => 20150121100431) do
 
   add_index "profiles", ["user_id"], :name => "index_profiles_on_user_id"
 
+  create_table "roles", :force => true do |t|
+    t.string   "admin"
+    t.string   "superadmin"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "name"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "password_hash"
     t.string   "password_salt"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.integer  "role_id"
   end
 
 end

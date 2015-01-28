@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
   include Authorization
 
+  belongs_to :role
   has_one :profile, as: :profileable
 
   attr_accessible :email, :password, :password_confirmation

@@ -9,6 +9,7 @@ gem "carrierwave"
 gem 'pry'
 gem 'mysql2'
 gem 'yaml_db'
+gem 'cancan'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
