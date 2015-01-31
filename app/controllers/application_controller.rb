@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
 	# protect_from_forgery with: :exception
 	helper_method :current_user
 	helper_method :current_admin
+	helper_method :can_edit?
 
 	private
 
@@ -21,5 +22,9 @@ class ApplicationController < ActionController::Base
 
 	def current_admin
 	  @current_admin ||= Admin.find(session[:admin_id]) if session[:admin_id]
+	end
+
+	def can_edit?(user)
+		current_user == user || !!current_admin
 	end
 end

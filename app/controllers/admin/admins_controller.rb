@@ -28,7 +28,7 @@ class Admin::AdminsController < ApplicationController
 
 	def edit
 		@admin = Admin.find(params[:id])
-		@admin = current_admin
+		# @admin = current_admin
 	end
 
 	def update
@@ -42,11 +42,9 @@ class Admin::AdminsController < ApplicationController
 
 	def destroy
 		@admin = Admin.find(params[:id])
-		@user = User.find(params[:id])
-		@admin.destroy
-		@user.destroy
-		if @user.destroy
-      redirect_to admin_admin_path, notice: "User deleted."
+		# @admin.destroy
+    if @admin.destroy
+    	redirect_to admin_admins_path, notice: 'User deleted'
     end
 	end
 
